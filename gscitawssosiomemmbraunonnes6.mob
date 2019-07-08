@@ -1,0 +1,1257 @@
+{
+    "name": "SCT_W6_Assignment_Answer",
+    "author": "new_user",
+    "flowchart": {
+        "id": "f9a7ed02-6ad8-72c2-ba31-4cd4905916fa",
+        "name": "SCT_W6_Assignment_Answer",
+        "description": "In this assignment, you are tasked to create a function that creates staircases parametrically. The parameters to vary include the following:\n\n- location\n- number of steps\n- width of staircase\n- tread depth\n- riser height\n\n'New' Concepts:\n\n- Creating and importing User Defined Functions",
+        "language": "js",
+        "meta": {
+            "selected_nodes": [
+                0
+            ]
+        },
+        "nodes": [
+            {
+                "name": "Start",
+                "id": "node_s7juuqji3eh",
+                "position": {
+                    "x": 5340,
+                    "y": 5000
+                },
+                "enabled": true,
+                "type": "start",
+                "procedure": [
+                    {
+                        "type": 13,
+                        "ID": "",
+                        "meta": {
+                            "name": "",
+                            "module": ""
+                        },
+                        "argCount": 0,
+                        "args": [],
+                        "print": false,
+                        "enabled": true,
+                        "selected": false,
+                        "selectGeom": false,
+                        "hasError": false
+                    }
+                ],
+                "state": {
+                    "procedure": []
+                },
+                "input": {
+                    "name": "input",
+                    "type": 0,
+                    "edges": [],
+                    "meta": {
+                        "mode": 0,
+                        "opts": {}
+                    },
+                    "parentNode": "~flowchart~nodes~0"
+                },
+                "output": {
+                    "name": "output",
+                    "type": 1,
+                    "edges": [
+                        {
+                            "source": "~flowchart~nodes~0~output",
+                            "target": {
+                                "name": "input",
+                                "type": 0,
+                                "edges": [
+                                    "~flowchart~nodes~0~output~edges~0"
+                                ],
+                                "meta": {
+                                    "mode": 0,
+                                    "opts": {}
+                                },
+                                "parentNode": {
+                                    "name": "Node",
+                                    "id": "node_u7pw4ftv5rc",
+                                    "position": {
+                                        "x": 5340,
+                                        "y": 5200
+                                    },
+                                    "enabled": true,
+                                    "type": "",
+                                    "procedure": [
+                                        {
+                                            "type": 13,
+                                            "ID": "",
+                                            "meta": {
+                                                "name": "",
+                                                "module": ""
+                                            },
+                                            "argCount": 0,
+                                            "args": [],
+                                            "print": false,
+                                            "enabled": true,
+                                            "selected": false,
+                                            "selectGeom": false,
+                                            "hasError": false
+                                        },
+                                        {
+                                            "type": 9,
+                                            "ID": "prod-yi9lpmy0i5a",
+                                            "enabled": true,
+                                            "print": false,
+                                            "meta": {
+                                                "module": "Imported",
+                                                "name": "SCT_W6_Assignment_UDF"
+                                            },
+                                            "argCount": 6,
+                                            "args": [
+                                                {
+                                                    "name": "__none__",
+                                                    "linked": false
+                                                },
+                                                {
+                                                    "name": "location",
+                                                    "value": "[0, 0, 0]",
+                                                    "type": 0,
+                                                    "linked": false,
+                                                    "usedVars": [],
+                                                    "invalidVar": false
+                                                },
+                                                {
+                                                    "name": "num_steps",
+                                                    "value": "10",
+                                                    "type": 1,
+                                                    "linked": false,
+                                                    "usedVars": [],
+                                                    "invalidVar": false
+                                                },
+                                                {
+                                                    "name": "width",
+                                                    "value": 3,
+                                                    "type": 1,
+                                                    "linked": false
+                                                },
+                                                {
+                                                    "name": "tread_depth",
+                                                    "value": "0.3",
+                                                    "type": 1,
+                                                    "linked": false,
+                                                    "usedVars": [],
+                                                    "invalidVar": false
+                                                },
+                                                {
+                                                    "name": "riser_height",
+                                                    "value": "0.15",
+                                                    "type": 1,
+                                                    "linked": false,
+                                                    "usedVars": [],
+                                                    "invalidVar": false
+                                                }
+                                            ],
+                                            "selected": false,
+                                            "hasError": false
+                                        },
+                                        {
+                                            "type": 9,
+                                            "ID": "prod-n9l47gftrrm",
+                                            "enabled": true,
+                                            "print": false,
+                                            "meta": {
+                                                "module": "Imported",
+                                                "name": "SCT_W6_Assignment_UDF"
+                                            },
+                                            "argCount": 6,
+                                            "args": [
+                                                {
+                                                    "name": "__none__",
+                                                    "linked": false
+                                                },
+                                                {
+                                                    "name": "location",
+                                                    "value": "[10, 0, 0]",
+                                                    "type": 0,
+                                                    "linked": false,
+                                                    "usedVars": [],
+                                                    "invalidVar": false
+                                                },
+                                                {
+                                                    "name": "num_steps",
+                                                    "value": "20",
+                                                    "type": 1,
+                                                    "linked": false,
+                                                    "usedVars": [],
+                                                    "invalidVar": false
+                                                },
+                                                {
+                                                    "name": "width",
+                                                    "value": "4",
+                                                    "type": 1,
+                                                    "linked": false,
+                                                    "usedVars": [],
+                                                    "invalidVar": false
+                                                },
+                                                {
+                                                    "name": "tread_depth",
+                                                    "value": 0.275,
+                                                    "type": 1,
+                                                    "linked": false
+                                                },
+                                                {
+                                                    "name": "riser_height",
+                                                    "value": "0.175",
+                                                    "type": 1,
+                                                    "linked": false,
+                                                    "usedVars": [],
+                                                    "invalidVar": false
+                                                }
+                                            ],
+                                            "selected": false,
+                                            "hasError": false
+                                        },
+                                        {
+                                            "type": 9,
+                                            "ID": "prod-lfjh51g47",
+                                            "enabled": true,
+                                            "print": false,
+                                            "meta": {
+                                                "module": "Imported",
+                                                "name": "SCT_W6_Assignment_UDF"
+                                            },
+                                            "argCount": 6,
+                                            "args": [
+                                                {
+                                                    "name": "__none__",
+                                                    "linked": false
+                                                },
+                                                {
+                                                    "name": "location",
+                                                    "value": "[20, 0, 0]",
+                                                    "type": 0,
+                                                    "linked": false,
+                                                    "usedVars": [],
+                                                    "invalidVar": false
+                                                },
+                                                {
+                                                    "name": "num_steps",
+                                                    "value": "30",
+                                                    "type": 1,
+                                                    "linked": false,
+                                                    "usedVars": [],
+                                                    "invalidVar": false
+                                                },
+                                                {
+                                                    "name": "width",
+                                                    "value": "5",
+                                                    "type": 1,
+                                                    "linked": false,
+                                                    "usedVars": [],
+                                                    "invalidVar": false
+                                                },
+                                                {
+                                                    "name": "tread_depth",
+                                                    "value": "0.25",
+                                                    "type": 1,
+                                                    "linked": false,
+                                                    "usedVars": [],
+                                                    "invalidVar": false
+                                                },
+                                                {
+                                                    "name": "riser_height",
+                                                    "value": "0.2",
+                                                    "type": 1,
+                                                    "linked": false,
+                                                    "usedVars": [],
+                                                    "invalidVar": false
+                                                }
+                                            ],
+                                            "selected": false,
+                                            "hasError": false
+                                        }
+                                    ],
+                                    "state": {
+                                        "procedure": []
+                                    },
+                                    "input": "~flowchart~nodes~0~output~edges~0~target",
+                                    "output": {
+                                        "name": "output",
+                                        "type": 1,
+                                        "edges": [
+                                            {
+                                                "source": "~flowchart~nodes~0~output~edges~0~target~parentNode~output",
+                                                "target": {
+                                                    "name": "input",
+                                                    "type": 0,
+                                                    "edges": [
+                                                        "~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~0"
+                                                    ],
+                                                    "meta": {
+                                                        "mode": 0,
+                                                        "opts": {}
+                                                    },
+                                                    "parentNode": {
+                                                        "name": "End",
+                                                        "id": "node_dw281v3iuqi",
+                                                        "position": {
+                                                            "x": 5340,
+                                                            "y": 5400
+                                                        },
+                                                        "enabled": true,
+                                                        "type": "end",
+                                                        "procedure": [
+                                                            {
+                                                                "type": 13,
+                                                                "ID": "",
+                                                                "meta": {
+                                                                    "name": "",
+                                                                    "module": ""
+                                                                },
+                                                                "argCount": 0,
+                                                                "args": [],
+                                                                "print": false,
+                                                                "enabled": true,
+                                                                "selected": false,
+                                                                "selectGeom": false,
+                                                                "hasError": false
+                                                            },
+                                                            {
+                                                                "type": 11,
+                                                                "ID": "",
+                                                                "meta": {
+                                                                    "name": "",
+                                                                    "module": ""
+                                                                },
+                                                                "argCount": 2,
+                                                                "args": [
+                                                                    {
+                                                                        "name": "__model__",
+                                                                        "value": "",
+                                                                        "linked": false
+                                                                    },
+                                                                    {
+                                                                        "name": "value",
+                                                                        "value": "",
+                                                                        "linked": false
+                                                                    }
+                                                                ],
+                                                                "print": false,
+                                                                "enabled": true,
+                                                                "selected": false,
+                                                                "selectGeom": false,
+                                                                "hasError": false
+                                                            }
+                                                        ],
+                                                        "state": {
+                                                            "procedure": []
+                                                        },
+                                                        "input": "~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~0~target",
+                                                        "output": {
+                                                            "name": "output",
+                                                            "type": 1,
+                                                            "edges": [],
+                                                            "meta": {
+                                                                "mode": 0
+                                                            },
+                                                            "parentNode": "~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~0~target~parentNode"
+                                                        },
+                                                        "hasError": false,
+                                                        "hasExecuted": true
+                                                    }
+                                                },
+                                                "selected": false
+                                            }
+                                        ],
+                                        "meta": {
+                                            "mode": 0
+                                        },
+                                        "parentNode": "~flowchart~nodes~0~output~edges~0~target~parentNode",
+                                        "model": null
+                                    },
+                                    "hasError": false,
+                                    "hasExecuted": true
+                                }
+                            },
+                            "selected": false
+                        }
+                    ],
+                    "meta": {
+                        "mode": 0
+                    },
+                    "parentNode": "~flowchart~nodes~0",
+                    "model": null
+                },
+                "hasError": false,
+                "hasExecuted": true
+            },
+            "~flowchart~nodes~0~output~edges~0~target~parentNode",
+            "~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~0~target~parentNode"
+        ],
+        "edges": [
+            "~flowchart~nodes~0~output~edges~0",
+            "~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~0"
+        ],
+        "functions": [
+            {
+                "flowchart": {
+                    "id": "4ab954fd-3669-23e0-e87c-916c03fc79b6",
+                    "name": "SCT_W6_Assignment_UDF",
+                    "nodes": [
+                        {
+                            "name": "Start",
+                            "id": "node_zrs8sa28zg8",
+                            "position": {
+                                "x": 5340,
+                                "y": 5020
+                            },
+                            "enabled": true,
+                            "type": "start",
+                            "procedure": [
+                                {
+                                    "type": 13,
+                                    "ID": "",
+                                    "meta": {
+                                        "name": "",
+                                        "module": ""
+                                    },
+                                    "argCount": 0,
+                                    "args": [],
+                                    "print": false,
+                                    "enabled": true,
+                                    "selected": false,
+                                    "selectGeom": false,
+                                    "hasError": false
+                                },
+                                {
+                                    "type": 8,
+                                    "ID": "prod-p9hs9o8j277",
+                                    "enabled": true,
+                                    "print": false,
+                                    "meta": {
+                                        "module": "make",
+                                        "name": "Position"
+                                    },
+                                    "argCount": 3,
+                                    "args": [
+                                        {
+                                            "name": "var_name",
+                                            "value": "base_ps",
+                                            "invalidVar": false,
+                                            "linked": false
+                                        },
+                                        {
+                                            "name": "__model__",
+                                            "linked": false
+                                        },
+                                        {
+                                            "name": "coords",
+                                            "value": "[0, 0, 0]",
+                                            "linked": false,
+                                            "usedVars": [],
+                                            "invalidVar": false
+                                        }
+                                    ],
+                                    "selected": false,
+                                    "variable": "base_ps",
+                                    "hasError": false
+                                },
+                                {
+                                    "type": 0,
+                                    "ID": "prod-wpohqk64xm",
+                                    "enabled": true,
+                                    "print": false,
+                                    "argCount": 2,
+                                    "args": [
+                                        {
+                                            "name": "var_name",
+                                            "value": "coords",
+                                            "invalidVar": false,
+                                            "linked": false
+                                        },
+                                        {
+                                            "name": "value",
+                                            "value": "base_ps@xyz",
+                                            "linked": false,
+                                            "usedVars": [
+                                                "base_ps"
+                                            ],
+                                            "invalidVar": false
+                                        }
+                                    ],
+                                    "selected": false,
+                                    "variable": "coords",
+                                    "hasError": false
+                                },
+                                {
+                                    "type": 10,
+                                    "ID": "prod-v3mz8r3hsrd",
+                                    "enabled": true,
+                                    "print": false,
+                                    "argCount": 2,
+                                    "meta": {
+                                        "module": "Input",
+                                        "name": "Constant",
+                                        "inputMode": 0,
+                                        "description": "Location of staircase, as a list of xyz-coordinates"
+                                    },
+                                    "args": [
+                                        {
+                                            "name": "const_name",
+                                            "value": "location",
+                                            "linked": false
+                                        },
+                                        {
+                                            "name": "__input__",
+                                            "value": "coords",
+                                            "linked": false
+                                        }
+                                    ],
+                                    "selected": false,
+                                    "hasError": false
+                                },
+                                {
+                                    "type": 10,
+                                    "ID": "prod-9jb15j9ta3d",
+                                    "enabled": true,
+                                    "print": false,
+                                    "argCount": 2,
+                                    "meta": {
+                                        "module": "Input",
+                                        "name": "Constant",
+                                        "inputMode": 1,
+                                        "description": "Number of steps"
+                                    },
+                                    "args": [
+                                        {
+                                            "name": "const_name",
+                                            "value": "num_steps",
+                                            "linked": false
+                                        },
+                                        {
+                                            "name": "__input__",
+                                            "value": "17",
+                                            "step": "1",
+                                            "min": "1",
+                                            "max": "50",
+                                            "linked": false
+                                        }
+                                    ],
+                                    "selected": false,
+                                    "hasError": false,
+                                    "selectGeom": false
+                                },
+                                {
+                                    "type": 10,
+                                    "ID": "prod-mvw8uamf9eq",
+                                    "enabled": true,
+                                    "print": false,
+                                    "argCount": 2,
+                                    "meta": {
+                                        "module": "Input",
+                                        "name": "Constant",
+                                        "inputMode": 1,
+                                        "description": "Width of staircase"
+                                    },
+                                    "args": [
+                                        {
+                                            "name": "const_name",
+                                            "value": "width",
+                                            "linked": false
+                                        },
+                                        {
+                                            "name": "__input__",
+                                            "value": 3,
+                                            "step": "1",
+                                            "min": "2",
+                                            "max": "10",
+                                            "linked": false
+                                        }
+                                    ],
+                                    "selected": false,
+                                    "hasError": false
+                                },
+                                {
+                                    "type": 10,
+                                    "ID": "prod-6x62a9dd454",
+                                    "enabled": true,
+                                    "print": false,
+                                    "argCount": 2,
+                                    "meta": {
+                                        "module": "Input",
+                                        "name": "Constant",
+                                        "inputMode": 1,
+                                        "description": "Depth of tread"
+                                    },
+                                    "args": [
+                                        {
+                                            "name": "const_name",
+                                            "value": "tread_depth",
+                                            "linked": false
+                                        },
+                                        {
+                                            "name": "__input__",
+                                            "value": 0.275,
+                                            "step": "0.05",
+                                            "min": "0.25",
+                                            "max": "0.40",
+                                            "linked": false
+                                        }
+                                    ],
+                                    "selected": false,
+                                    "hasError": false
+                                },
+                                {
+                                    "type": 10,
+                                    "ID": "prod-5n77dbjfywl",
+                                    "enabled": true,
+                                    "print": false,
+                                    "argCount": 2,
+                                    "meta": {
+                                        "module": "Input",
+                                        "name": "Constant",
+                                        "inputMode": 1,
+                                        "description": "Height of riser"
+                                    },
+                                    "args": [
+                                        {
+                                            "name": "const_name",
+                                            "value": "riser_height",
+                                            "linked": false
+                                        },
+                                        {
+                                            "name": "__input__",
+                                            "value": "0.15",
+                                            "min": "0.125",
+                                            "max": "0.175",
+                                            "step": "0.05",
+                                            "linked": false
+                                        }
+                                    ],
+                                    "selected": false,
+                                    "hasError": false
+                                }
+                            ],
+                            "state": {
+                                "procedure": []
+                            },
+                            "input": {
+                                "name": "input",
+                                "type": 0,
+                                "edges": [],
+                                "meta": {
+                                    "mode": 0,
+                                    "opts": {}
+                                },
+                                "parentNode": "~flowchart~functions~0~flowchart~nodes~0"
+                            },
+                            "output": {
+                                "name": "output",
+                                "type": 1,
+                                "edges": [
+                                    {
+                                        "source": "~flowchart~functions~0~flowchart~nodes~0~output",
+                                        "target": {
+                                            "name": "input",
+                                            "type": 0,
+                                            "edges": [
+                                                "~flowchart~functions~0~flowchart~nodes~0~output~edges~0"
+                                            ],
+                                            "meta": {
+                                                "mode": 0,
+                                                "opts": {}
+                                            },
+                                            "parentNode": {
+                                                "name": "Side Profile",
+                                                "id": "node_jite5eyawo9",
+                                                "position": {
+                                                    "x": 5340,
+                                                    "y": 5120
+                                                },
+                                                "enabled": true,
+                                                "type": "",
+                                                "procedure": [
+                                                    {
+                                                        "type": 13,
+                                                        "ID": "",
+                                                        "meta": {
+                                                            "name": "",
+                                                            "module": ""
+                                                        },
+                                                        "argCount": 0,
+                                                        "args": [],
+                                                        "print": false,
+                                                        "enabled": true,
+                                                        "selected": false,
+                                                        "selectGeom": false,
+                                                        "hasError": false
+                                                    },
+                                                    {
+                                                        "type": 8,
+                                                        "ID": "prod-prk6nwq07vs",
+                                                        "enabled": true,
+                                                        "print": false,
+                                                        "meta": {
+                                                            "module": "make",
+                                                            "name": "Position"
+                                                        },
+                                                        "argCount": 3,
+                                                        "args": [
+                                                            {
+                                                                "name": "var_name",
+                                                                "value": "base_ps",
+                                                                "linked": false,
+                                                                "invalidVar": false
+                                                            },
+                                                            {
+                                                                "name": "__model__",
+                                                                "linked": false
+                                                            },
+                                                            {
+                                                                "name": "coords",
+                                                                "value": "location",
+                                                                "invalidVar": false,
+                                                                "linked": false,
+                                                                "usedVars": [
+                                                                    "location"
+                                                                ]
+                                                            }
+                                                        ],
+                                                        "selected": false,
+                                                        "variable": "base_ps",
+                                                        "selectGeom": false,
+                                                        "hasError": false
+                                                    },
+                                                    {
+                                                        "type": 8,
+                                                        "ID": "prod-e30f86szbhh",
+                                                        "enabled": true,
+                                                        "print": false,
+                                                        "meta": {
+                                                            "module": "make",
+                                                            "name": "Position"
+                                                        },
+                                                        "argCount": 3,
+                                                        "args": [
+                                                            {
+                                                                "name": "var_name",
+                                                                "value": "base_ps_end",
+                                                                "linked": false,
+                                                                "invalidVar": false
+                                                            },
+                                                            {
+                                                                "name": "__model__",
+                                                                "linked": false
+                                                            },
+                                                            {
+                                                                "name": "coords",
+                                                                "value": "[location[0], num_steps * tread_depth + location[1], location[2]]",
+                                                                "invalidVar": false,
+                                                                "linked": false,
+                                                                "usedVars": [
+                                                                    "tread_depth",
+                                                                    "num_steps",
+                                                                    "location"
+                                                                ]
+                                                            }
+                                                        ],
+                                                        "selected": false,
+                                                        "variable": "base_ps_end",
+                                                        "selectGeom": false,
+                                                        "hasError": false
+                                                    },
+                                                    {
+                                                        "type": 0,
+                                                        "ID": "prod-onh6jz5jj9r",
+                                                        "enabled": true,
+                                                        "print": false,
+                                                        "argCount": 2,
+                                                        "args": [
+                                                            {
+                                                                "name": "var_name",
+                                                                "value": "all_ps",
+                                                                "invalidVar": false,
+                                                                "linked": false
+                                                            },
+                                                            {
+                                                                "name": "value",
+                                                                "linked": false,
+                                                                "value": "[base_ps_end, base_ps]",
+                                                                "invalidVar": false,
+                                                                "usedVars": [
+                                                                    "base_ps",
+                                                                    "base_ps_end"
+                                                                ]
+                                                            }
+                                                        ],
+                                                        "selected": false,
+                                                        "variable": "all_ps",
+                                                        "selectGeom": false,
+                                                        "hasError": false
+                                                    },
+                                                    {
+                                                        "type": 4,
+                                                        "ID": "prod-dd992f0743t",
+                                                        "enabled": true,
+                                                        "print": false,
+                                                        "argCount": 2,
+                                                        "args": [
+                                                            {
+                                                                "name": "item",
+                                                                "value": "i",
+                                                                "linked": false,
+                                                                "invalidVar": false
+                                                            },
+                                                            {
+                                                                "name": "list",
+                                                                "value": "range(0, num_steps)",
+                                                                "usedVars": [
+                                                                    "num_steps"
+                                                                ],
+                                                                "invalidVar": false,
+                                                                "linked": false
+                                                            }
+                                                        ],
+                                                        "children": [
+                                                            {
+                                                                "type": 13,
+                                                                "ID": "",
+                                                                "parent": "~flowchart~functions~0~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~4",
+                                                                "meta": {
+                                                                    "name": "",
+                                                                    "module": ""
+                                                                },
+                                                                "argCount": 0,
+                                                                "args": [],
+                                                                "print": false,
+                                                                "enabled": true,
+                                                                "selected": false,
+                                                                "selectGeom": false,
+                                                                "hasError": false
+                                                            },
+                                                            {
+                                                                "type": 8,
+                                                                "ID": "prod-uwnxk5o00r",
+                                                                "enabled": true,
+                                                                "print": false,
+                                                                "meta": {
+                                                                    "module": "make",
+                                                                    "name": "Position"
+                                                                },
+                                                                "argCount": 3,
+                                                                "args": [
+                                                                    {
+                                                                        "name": "var_name",
+                                                                        "value": "new_ps",
+                                                                        "linked": false,
+                                                                        "invalidVar": false
+                                                                    },
+                                                                    {
+                                                                        "name": "__model__",
+                                                                        "linked": false
+                                                                    },
+                                                                    {
+                                                                        "name": "coords",
+                                                                        "value": "[location[0], i * tread_depth + location[1], (i + 1) * riser_height + location[2]]",
+                                                                        "invalidVar": false,
+                                                                        "linked": false,
+                                                                        "usedVars": [
+                                                                            "riser_height",
+                                                                            "tread_depth",
+                                                                            "location",
+                                                                            "i"
+                                                                        ]
+                                                                    }
+                                                                ],
+                                                                "selected": false,
+                                                                "variable": "new_ps",
+                                                                "selectGeom": false,
+                                                                "parent": "~flowchart~functions~0~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~4",
+                                                                "hasError": false
+                                                            },
+                                                            {
+                                                                "type": 8,
+                                                                "ID": "prod-jkquygaex4r",
+                                                                "enabled": true,
+                                                                "print": false,
+                                                                "meta": {
+                                                                    "module": "make",
+                                                                    "name": "Position"
+                                                                },
+                                                                "argCount": 3,
+                                                                "args": [
+                                                                    {
+                                                                        "name": "var_name",
+                                                                        "value": "new_ps2",
+                                                                        "linked": false,
+                                                                        "invalidVar": false
+                                                                    },
+                                                                    {
+                                                                        "name": "__model__",
+                                                                        "linked": false
+                                                                    },
+                                                                    {
+                                                                        "name": "coords",
+                                                                        "value": "[location[0], (i + 1) * tread_depth + location[1], (i + 1) * riser_height + location[2]]",
+                                                                        "invalidVar": false,
+                                                                        "linked": false,
+                                                                        "usedVars": [
+                                                                            "riser_height",
+                                                                            "tread_depth",
+                                                                            "location",
+                                                                            "i"
+                                                                        ]
+                                                                    }
+                                                                ],
+                                                                "selected": false,
+                                                                "variable": "new_ps2",
+                                                                "selectGeom": false,
+                                                                "parent": "~flowchart~functions~0~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~4",
+                                                                "hasError": false
+                                                            },
+                                                            {
+                                                                "type": 8,
+                                                                "ID": "prod-fzr4tmuaohw",
+                                                                "enabled": true,
+                                                                "print": false,
+                                                                "meta": {
+                                                                    "module": "list",
+                                                                    "name": "Add"
+                                                                },
+                                                                "argCount": 4,
+                                                                "args": [
+                                                                    {
+                                                                        "name": "__none__",
+                                                                        "linked": false
+                                                                    },
+                                                                    {
+                                                                        "name": "list",
+                                                                        "value": "all_ps",
+                                                                        "invalidVar": false,
+                                                                        "linked": false,
+                                                                        "usedVars": [
+                                                                            "all_ps"
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "item",
+                                                                        "value": "[new_ps, new_ps2]",
+                                                                        "invalidVar": false,
+                                                                        "linked": false,
+                                                                        "usedVars": [
+                                                                            "new_ps",
+                                                                            "new_ps2"
+                                                                        ]
+                                                                    },
+                                                                    {
+                                                                        "name": "method",
+                                                                        "value": "'to_end'",
+                                                                        "usedVars": [],
+                                                                        "invalidVar": false,
+                                                                        "linked": false
+                                                                    }
+                                                                ],
+                                                                "selected": false,
+                                                                "selectGeom": false,
+                                                                "parent": "~flowchart~functions~0~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~4",
+                                                                "hasError": false
+                                                            }
+                                                        ],
+                                                        "variable": "i",
+                                                        "hasError": false,
+                                                        "selected": false
+                                                    },
+                                                    {
+                                                        "type": 8,
+                                                        "ID": "prod-y1onsrng18c",
+                                                        "enabled": true,
+                                                        "print": false,
+                                                        "meta": {
+                                                            "module": "make",
+                                                            "name": "Polygon"
+                                                        },
+                                                        "argCount": 3,
+                                                        "args": [
+                                                            {
+                                                                "name": "var_name",
+                                                                "value": "side_pg",
+                                                                "linked": false,
+                                                                "invalidVar": false
+                                                            },
+                                                            {
+                                                                "name": "__model__",
+                                                                "linked": false
+                                                            },
+                                                            {
+                                                                "name": "entities",
+                                                                "value": "listFlat(all_ps, 1)",
+                                                                "usedVars": [
+                                                                    "all_ps"
+                                                                ],
+                                                                "invalidVar": false,
+                                                                "linked": false
+                                                            }
+                                                        ],
+                                                        "selected": false,
+                                                        "variable": "side_pg",
+                                                        "hasError": false
+                                                    },
+                                                    {
+                                                        "type": 8,
+                                                        "ID": "prod-9itc65grxpd",
+                                                        "enabled": true,
+                                                        "print": false,
+                                                        "meta": {
+                                                            "module": "make",
+                                                            "name": "Extrude"
+                                                        },
+                                                        "argCount": 6,
+                                                        "args": [
+                                                            {
+                                                                "name": "var_name",
+                                                                "value": "stairs",
+                                                                "linked": false,
+                                                                "invalidVar": false
+                                                            },
+                                                            {
+                                                                "name": "__model__",
+                                                                "linked": false
+                                                            },
+                                                            {
+                                                                "name": "entities",
+                                                                "value": "side_pg",
+                                                                "linked": false,
+                                                                "usedVars": [
+                                                                    "side_pg"
+                                                                ],
+                                                                "invalidVar": false
+                                                            },
+                                                            {
+                                                                "name": "distance",
+                                                                "value": "[-width, 0, 0]",
+                                                                "linked": false,
+                                                                "usedVars": [
+                                                                    "width"
+                                                                ],
+                                                                "invalidVar": false
+                                                            },
+                                                            {
+                                                                "name": "divisions",
+                                                                "value": "1",
+                                                                "linked": false,
+                                                                "usedVars": [],
+                                                                "invalidVar": false
+                                                            },
+                                                            {
+                                                                "name": "method",
+                                                                "value": "'quads'",
+                                                                "linked": false,
+                                                                "usedVars": [],
+                                                                "invalidVar": false
+                                                            }
+                                                        ],
+                                                        "selected": false,
+                                                        "variable": "stairs",
+                                                        "hasError": false,
+                                                        "selectGeom": false
+                                                    },
+                                                    {
+                                                        "type": 8,
+                                                        "ID": "prod-2cyo7bnkdwi",
+                                                        "enabled": true,
+                                                        "print": false,
+                                                        "meta": {
+                                                            "module": "modify",
+                                                            "name": "Reverse"
+                                                        },
+                                                        "argCount": 3,
+                                                        "args": [
+                                                            {
+                                                                "name": "__none__",
+                                                                "linked": false
+                                                            },
+                                                            {
+                                                                "name": "__model__",
+                                                                "linked": false
+                                                            },
+                                                            {
+                                                                "name": "entities",
+                                                                "linked": false,
+                                                                "value": "side_pg",
+                                                                "usedVars": [
+                                                                    "side_pg"
+                                                                ],
+                                                                "invalidVar": false
+                                                            }
+                                                        ],
+                                                        "selected": false,
+                                                        "selectGeom": false,
+                                                        "hasError": false
+                                                    }
+                                                ],
+                                                "state": {
+                                                    "procedure": []
+                                                },
+                                                "input": "~flowchart~functions~0~flowchart~nodes~0~output~edges~0~target",
+                                                "output": {
+                                                    "name": "output",
+                                                    "type": 1,
+                                                    "edges": [
+                                                        {
+                                                            "source": "~flowchart~functions~0~flowchart~nodes~0~output~edges~0~target~parentNode~output",
+                                                            "target": {
+                                                                "name": "input",
+                                                                "type": 0,
+                                                                "edges": [
+                                                                    "~flowchart~functions~0~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~0"
+                                                                ],
+                                                                "meta": {
+                                                                    "mode": 0,
+                                                                    "opts": {}
+                                                                },
+                                                                "parentNode": {
+                                                                    "name": "End",
+                                                                    "id": "node_lewgfm95ng",
+                                                                    "position": {
+                                                                        "x": 5340,
+                                                                        "y": 5240
+                                                                    },
+                                                                    "enabled": true,
+                                                                    "type": "end",
+                                                                    "procedure": [
+                                                                        {
+                                                                            "type": 13,
+                                                                            "ID": "",
+                                                                            "meta": {
+                                                                                "name": "",
+                                                                                "module": ""
+                                                                            },
+                                                                            "argCount": 0,
+                                                                            "args": [],
+                                                                            "print": false,
+                                                                            "enabled": true,
+                                                                            "selected": false,
+                                                                            "selectGeom": false,
+                                                                            "hasError": false
+                                                                        },
+                                                                        {
+                                                                            "type": 11,
+                                                                            "ID": "",
+                                                                            "meta": {
+                                                                                "name": "",
+                                                                                "module": ""
+                                                                            },
+                                                                            "argCount": 2,
+                                                                            "args": [
+                                                                                {
+                                                                                    "name": "__model__",
+                                                                                    "value": "",
+                                                                                    "linked": false
+                                                                                },
+                                                                                {
+                                                                                    "name": "value",
+                                                                                    "value": "",
+                                                                                    "linked": false
+                                                                                }
+                                                                            ],
+                                                                            "print": false,
+                                                                            "enabled": true,
+                                                                            "selected": false,
+                                                                            "selectGeom": false,
+                                                                            "hasError": false
+                                                                        }
+                                                                    ],
+                                                                    "state": {
+                                                                        "procedure": []
+                                                                    },
+                                                                    "input": "~flowchart~functions~0~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~0~target",
+                                                                    "output": {
+                                                                        "name": "output",
+                                                                        "type": 1,
+                                                                        "edges": [],
+                                                                        "meta": {
+                                                                            "mode": 0
+                                                                        },
+                                                                        "parentNode": "~flowchart~functions~0~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~0~target~parentNode"
+                                                                    },
+                                                                    "hasError": false,
+                                                                    "hasExecuted": true
+                                                                }
+                                                            },
+                                                            "selected": false
+                                                        }
+                                                    ],
+                                                    "meta": {
+                                                        "mode": 0
+                                                    },
+                                                    "parentNode": "~flowchart~functions~0~flowchart~nodes~0~output~edges~0~target~parentNode",
+                                                    "model": null
+                                                },
+                                                "hasError": false,
+                                                "hasExecuted": true
+                                            }
+                                        },
+                                        "selected": false
+                                    }
+                                ],
+                                "meta": {
+                                    "mode": 0
+                                },
+                                "parentNode": "~flowchart~functions~0~flowchart~nodes~0",
+                                "model": null
+                            },
+                            "hasError": false,
+                            "hasExecuted": true
+                        },
+                        "~flowchart~functions~0~flowchart~nodes~0~output~edges~0~target~parentNode",
+                        "~flowchart~functions~0~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~0~target~parentNode"
+                    ],
+                    "edges": [
+                        "~flowchart~functions~0~flowchart~nodes~0~output~edges~0",
+                        "~flowchart~functions~0~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~0"
+                    ]
+                },
+                "name": "SCT_W6_Assignment_UDF",
+                "module": "Imported",
+                "doc": {
+                    "name": "SCT_W6_Assignment_UDF",
+                    "module": "Imported",
+                    "description": "This function creates staircases parametrically. The parameters to vary include the following:\n- number of steps\n- width of staircase\n- tread depth\n- riser height",
+                    "summary": "This function creates staircases parametrically. The parameters to vary include the following:\n- number of steps\n- width of staircase\n- tread depth\n- riser height",
+                    "parameters": [
+                        {
+                            "name": "location",
+                            "description": "Location of staircase, as a list of xyz-coordinates"
+                        },
+                        {
+                            "name": "num_steps",
+                            "description": "Number of steps"
+                        },
+                        {
+                            "name": "width",
+                            "description": "Width of staircase"
+                        },
+                        {
+                            "name": "tread_depth",
+                            "description": "Depth of tread"
+                        },
+                        {
+                            "name": "riser_height",
+                            "description": "Height of riser"
+                        }
+                    ]
+                },
+                "importedFile": "{\n    \"name\": \"Assignment_Week_6\",\n    \"author\": \"new_user\",\n    \"flowchart\": {\n        \"id\": \"4ab954fd-3669-23e0-e87c-916c03fc79b6\",\n        \"name\": \"SCT_W6_Assignment_UDF\",\n        \"description\": \"This function creates staircases parametrically. The parameters to vary include the following:\\n- number of steps\\n- width of staircase\\n- tread depth\\n- riser height\",\n        \"language\": \"js\",\n        \"meta\": {\n            \"selected_nodes\": [\n                0\n            ]\n        },\n        \"nodes\": [\n            {\n                \"name\": \"Start\",\n                \"id\": \"node_zrs8sa28zg8\",\n                \"position\": {\n                    \"x\": 5340,\n                    \"y\": 5020\n                },\n                \"enabled\": true,\n                \"type\": \"start\",\n                \"procedure\": [\n                    {\n                        \"type\": 13,\n                        \"ID\": \"\",\n                        \"meta\": {\n                            \"name\": \"\",\n                            \"module\": \"\"\n                        },\n                        \"argCount\": 0,\n                        \"args\": [],\n                        \"print\": false,\n                        \"enabled\": true,\n                        \"selected\": false,\n                        \"selectGeom\": false,\n                        \"hasError\": false\n                    },\n                    {\n                        \"type\": 8,\n                        \"ID\": \"prod-p9hs9o8j277\",\n                        \"enabled\": true,\n                        \"print\": false,\n                        \"meta\": {\n                            \"module\": \"make\",\n                            \"name\": \"Position\"\n                        },\n                        \"argCount\": 3,\n                        \"args\": [\n                            {\n                                \"name\": \"var_name\",\n                                \"value\": \"base_ps\",\n                                \"invalidVar\": false,\n                                \"linked\": false\n                            },\n                            {\n                                \"name\": \"__model__\",\n                                \"linked\": false\n                            },\n                            {\n                                \"name\": \"coords\",\n                                \"value\": \"[0, 0, 0]\",\n                                \"linked\": false,\n                                \"usedVars\": [],\n                                \"invalidVar\": false\n                            }\n                        ],\n                        \"selected\": false,\n                        \"variable\": \"base_ps\",\n                        \"hasError\": false\n                    },\n                    {\n                        \"type\": 0,\n                        \"ID\": \"prod-wpohqk64xm\",\n                        \"enabled\": true,\n                        \"print\": false,\n                        \"argCount\": 2,\n                        \"args\": [\n                            {\n                                \"name\": \"var_name\",\n                                \"value\": \"coords\",\n                                \"invalidVar\": false,\n                                \"linked\": false\n                            },\n                            {\n                                \"name\": \"value\",\n                                \"value\": \"base_ps@xyz\",\n                                \"linked\": false,\n                                \"usedVars\": [\n                                    \"base_ps\"\n                                ],\n                                \"invalidVar\": false\n                            }\n                        ],\n                        \"selected\": false,\n                        \"variable\": \"coords\",\n                        \"hasError\": false\n                    },\n                    {\n                        \"type\": 10,\n                        \"ID\": \"prod-v3mz8r3hsrd\",\n                        \"enabled\": true,\n                        \"print\": false,\n                        \"argCount\": 2,\n                        \"meta\": {\n                            \"module\": \"Input\",\n                            \"name\": \"Constant\",\n                            \"inputMode\": 0,\n                            \"description\": \"Location of staircase, as a list of xyz-coordinates\"\n                        },\n                        \"args\": [\n                            {\n                                \"name\": \"const_name\",\n                                \"value\": \"location\",\n                                \"linked\": false\n                            },\n                            {\n                                \"name\": \"__input__\",\n                                \"value\": \"coords\",\n                                \"linked\": false\n                            }\n                        ],\n                        \"selected\": false,\n                        \"hasError\": false\n                    },\n                    {\n                        \"type\": 10,\n                        \"ID\": \"prod-9jb15j9ta3d\",\n                        \"enabled\": true,\n                        \"print\": false,\n                        \"argCount\": 2,\n                        \"meta\": {\n                            \"module\": \"Input\",\n                            \"name\": \"Constant\",\n                            \"inputMode\": 1,\n                            \"description\": \"Number of steps\"\n                        },\n                        \"args\": [\n                            {\n                                \"name\": \"const_name\",\n                                \"value\": \"num_steps\",\n                                \"linked\": false\n                            },\n                            {\n                                \"name\": \"__input__\",\n                                \"value\": \"17\",\n                                \"step\": \"1\",\n                                \"min\": \"1\",\n                                \"max\": \"50\",\n                                \"linked\": false\n                            }\n                        ],\n                        \"selected\": false,\n                        \"hasError\": false,\n                        \"selectGeom\": false\n                    },\n                    {\n                        \"type\": 10,\n                        \"ID\": \"prod-mvw8uamf9eq\",\n                        \"enabled\": true,\n                        \"print\": false,\n                        \"argCount\": 2,\n                        \"meta\": {\n                            \"module\": \"Input\",\n                            \"name\": \"Constant\",\n                            \"inputMode\": 1,\n                            \"description\": \"Width of staircase\"\n                        },\n                        \"args\": [\n                            {\n                                \"name\": \"const_name\",\n                                \"value\": \"width\",\n                                \"linked\": false\n                            },\n                            {\n                                \"name\": \"__input__\",\n                                \"value\": 3,\n                                \"step\": \"1\",\n                                \"min\": \"2\",\n                                \"max\": \"10\",\n                                \"linked\": false\n                            }\n                        ],\n                        \"selected\": false,\n                        \"hasError\": false\n                    },\n                    {\n                        \"type\": 10,\n                        \"ID\": \"prod-6x62a9dd454\",\n                        \"enabled\": true,\n                        \"print\": false,\n                        \"argCount\": 2,\n                        \"meta\": {\n                            \"module\": \"Input\",\n                            \"name\": \"Constant\",\n                            \"inputMode\": 1,\n                            \"description\": \"Depth of tread\"\n                        },\n                        \"args\": [\n                            {\n                                \"name\": \"const_name\",\n                                \"value\": \"tread_depth\",\n                                \"linked\": false\n                            },\n                            {\n                                \"name\": \"__input__\",\n                                \"value\": 0.275,\n                                \"step\": \"0.05\",\n                                \"min\": \"0.25\",\n                                \"max\": \"0.40\",\n                                \"linked\": false\n                            }\n                        ],\n                        \"selected\": false,\n                        \"hasError\": false\n                    },\n                    {\n                        \"type\": 10,\n                        \"ID\": \"prod-5n77dbjfywl\",\n                        \"enabled\": true,\n                        \"print\": false,\n                        \"argCount\": 2,\n                        \"meta\": {\n                            \"module\": \"Input\",\n                            \"name\": \"Constant\",\n                            \"inputMode\": 1,\n                            \"description\": \"Height of riser\"\n                        },\n                        \"args\": [\n                            {\n                                \"name\": \"const_name\",\n                                \"value\": \"riser_height\",\n                                \"linked\": false\n                            },\n                            {\n                                \"name\": \"__input__\",\n                                \"value\": \"0.15\",\n                                \"min\": \"0.125\",\n                                \"max\": \"0.175\",\n                                \"step\": \"0.05\",\n                                \"linked\": false\n                            }\n                        ],\n                        \"selected\": false,\n                        \"hasError\": false\n                    }\n                ],\n                \"state\": {\n                    \"procedure\": []\n                },\n                \"input\": {\n                    \"name\": \"input\",\n                    \"type\": 0,\n                    \"edges\": [],\n                    \"meta\": {\n                        \"mode\": 0,\n                        \"opts\": {}\n                    },\n                    \"parentNode\": \"\\x7eflowchart~nodes~0\"\n                },\n                \"output\": {\n                    \"name\": \"output\",\n                    \"type\": 1,\n                    \"edges\": [\n                        {\n                            \"source\": \"~flowchart~nodes~0~output\",\n                            \"target\": {\n                                \"name\": \"input\",\n                                \"type\": 0,\n                                \"edges\": [\n                                    \"~flowchart~nodes~0~output~edges~0\"\n                                ],\n                                \"meta\": {\n                                    \"mode\": 0,\n                                    \"opts\": {}\n                                },\n                                \"parentNode\": {\n                                    \"name\": \"Side Profile\",\n                                    \"id\": \"node_jite5eyawo9\",\n                                    \"position\": {\n                                        \"x\": 5340,\n                                        \"y\": 5120\n                                    },\n                                    \"enabled\": true,\n                                    \"type\": \"\",\n                                    \"procedure\": [\n                                        {\n                                            \"type\": 13,\n                                            \"ID\": \"\",\n                                            \"meta\": {\n                                                \"name\": \"\",\n                                                \"module\": \"\"\n                                            },\n                                            \"argCount\": 0,\n                                            \"args\": [],\n                                            \"print\": false,\n                                            \"enabled\": true,\n                                            \"selected\": false,\n                                            \"selectGeom\": false,\n                                            \"hasError\": false\n                                        },\n                                        {\n                                            \"type\": 8,\n                                            \"ID\": \"prod-prk6nwq07vs\",\n                                            \"enabled\": true,\n                                            \"print\": false,\n                                            \"meta\": {\n                                                \"module\": \"make\",\n                                                \"name\": \"Position\"\n                                            },\n                                            \"argCount\": 3,\n                                            \"args\": [\n                                                {\n                                                    \"name\": \"var_name\",\n                                                    \"value\": \"base_ps\",\n                                                    \"linked\": false,\n                                                    \"invalidVar\": false\n                                                },\n                                                {\n                                                    \"name\": \"__model__\",\n                                                    \"linked\": false\n                                                },\n                                                {\n                                                    \"name\": \"coords\",\n                                                    \"value\": \"location\",\n                                                    \"invalidVar\": false,\n                                                    \"linked\": false,\n                                                    \"usedVars\": [\n                                                        \"location\"\n                                                    ]\n                                                }\n                                            ],\n                                            \"selected\": false,\n                                            \"variable\": \"base_ps\",\n                                            \"selectGeom\": false,\n                                            \"hasError\": false\n                                        },\n                                        {\n                                            \"type\": 8,\n                                            \"ID\": \"prod-e30f86szbhh\",\n                                            \"enabled\": true,\n                                            \"print\": false,\n                                            \"meta\": {\n                                                \"module\": \"make\",\n                                                \"name\": \"Position\"\n                                            },\n                                            \"argCount\": 3,\n                                            \"args\": [\n                                                {\n                                                    \"name\": \"var_name\",\n                                                    \"value\": \"base_ps_end\",\n                                                    \"linked\": false,\n                                                    \"invalidVar\": false\n                                                },\n                                                {\n                                                    \"name\": \"__model__\",\n                                                    \"linked\": false\n                                                },\n                                                {\n                                                    \"name\": \"coords\",\n                                                    \"value\": \"[location[0], num_steps * tread_depth + location[1], location[2]]\",\n                                                    \"invalidVar\": false,\n                                                    \"linked\": false,\n                                                    \"usedVars\": [\n                                                        \"tread_depth\",\n                                                        \"num_steps\",\n                                                        \"location\"\n                                                    ]\n                                                }\n                                            ],\n                                            \"selected\": false,\n                                            \"variable\": \"base_ps_end\",\n                                            \"selectGeom\": false,\n                                            \"hasError\": false\n                                        },\n                                        {\n                                            \"type\": 0,\n                                            \"ID\": \"prod-onh6jz5jj9r\",\n                                            \"enabled\": true,\n                                            \"print\": false,\n                                            \"argCount\": 2,\n                                            \"args\": [\n                                                {\n                                                    \"name\": \"var_name\",\n                                                    \"value\": \"all_ps\",\n                                                    \"invalidVar\": false,\n                                                    \"linked\": false\n                                                },\n                                                {\n                                                    \"name\": \"value\",\n                                                    \"linked\": false,\n                                                    \"value\": \"[base_ps_end, base_ps]\",\n                                                    \"invalidVar\": false,\n                                                    \"usedVars\": [\n                                                        \"base_ps\",\n                                                        \"base_ps_end\"\n                                                    ]\n                                                }\n                                            ],\n                                            \"selected\": false,\n                                            \"variable\": \"all_ps\",\n                                            \"selectGeom\": false,\n                                            \"hasError\": false\n                                        },\n                                        {\n                                            \"type\": 4,\n                                            \"ID\": \"prod-dd992f0743t\",\n                                            \"enabled\": true,\n                                            \"print\": false,\n                                            \"argCount\": 2,\n                                            \"args\": [\n                                                {\n                                                    \"name\": \"item\",\n                                                    \"value\": \"i\",\n                                                    \"linked\": false,\n                                                    \"invalidVar\": false\n                                                },\n                                                {\n                                                    \"name\": \"list\",\n                                                    \"value\": \"range(0, num_steps)\",\n                                                    \"usedVars\": [\n                                                        \"num_steps\"\n                                                    ],\n                                                    \"invalidVar\": false,\n                                                    \"linked\": false\n                                                }\n                                            ],\n                                            \"children\": [\n                                                {\n                                                    \"type\": 13,\n                                                    \"ID\": \"\",\n                                                    \"parent\": \"~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~4\",\n                                                    \"meta\": {\n                                                        \"name\": \"\",\n                                                        \"module\": \"\"\n                                                    },\n                                                    \"argCount\": 0,\n                                                    \"args\": [],\n                                                    \"print\": false,\n                                                    \"enabled\": true,\n                                                    \"selected\": false,\n                                                    \"selectGeom\": false,\n                                                    \"hasError\": false\n                                                },\n                                                {\n                                                    \"type\": 8,\n                                                    \"ID\": \"prod-uwnxk5o00r\",\n                                                    \"enabled\": true,\n                                                    \"print\": false,\n                                                    \"meta\": {\n                                                        \"module\": \"make\",\n                                                        \"name\": \"Position\"\n                                                    },\n                                                    \"argCount\": 3,\n                                                    \"args\": [\n                                                        {\n                                                            \"name\": \"var_name\",\n                                                            \"value\": \"new_ps\",\n                                                            \"linked\": false,\n                                                            \"invalidVar\": false\n                                                        },\n                                                        {\n                                                            \"name\": \"__model__\",\n                                                            \"linked\": false\n                                                        },\n                                                        {\n                                                            \"name\": \"coords\",\n                                                            \"value\": \"[location[0], i * tread_depth + location[1], (i + 1) * riser_height + location[2]]\",\n                                                            \"invalidVar\": false,\n                                                            \"linked\": false,\n                                                            \"usedVars\": [\n                                                                \"riser_height\",\n                                                                \"tread_depth\",\n                                                                \"location\",\n                                                                \"i\"\n                                                            ]\n                                                        }\n                                                    ],\n                                                    \"selected\": false,\n                                                    \"variable\": \"new_ps\",\n                                                    \"selectGeom\": false,\n                                                    \"parent\": \"~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~4\",\n                                                    \"hasError\": false\n                                                },\n                                                {\n                                                    \"type\": 8,\n                                                    \"ID\": \"prod-jkquygaex4r\",\n                                                    \"enabled\": true,\n                                                    \"print\": false,\n                                                    \"meta\": {\n                                                        \"module\": \"make\",\n                                                        \"name\": \"Position\"\n                                                    },\n                                                    \"argCount\": 3,\n                                                    \"args\": [\n                                                        {\n                                                            \"name\": \"var_name\",\n                                                            \"value\": \"new_ps2\",\n                                                            \"linked\": false,\n                                                            \"invalidVar\": false\n                                                        },\n                                                        {\n                                                            \"name\": \"__model__\",\n                                                            \"linked\": false\n                                                        },\n                                                        {\n                                                            \"name\": \"coords\",\n                                                            \"value\": \"[location[0], (i + 1) * tread_depth + location[1], (i + 1) * riser_height + location[2]]\",\n                                                            \"invalidVar\": false,\n                                                            \"linked\": false,\n                                                            \"usedVars\": [\n                                                                \"riser_height\",\n                                                                \"tread_depth\",\n                                                                \"location\",\n                                                                \"i\"\n                                                            ]\n                                                        }\n                                                    ],\n                                                    \"selected\": false,\n                                                    \"variable\": \"new_ps2\",\n                                                    \"selectGeom\": false,\n                                                    \"parent\": \"~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~4\",\n                                                    \"hasError\": false\n                                                },\n                                                {\n                                                    \"type\": 8,\n                                                    \"ID\": \"prod-fzr4tmuaohw\",\n                                                    \"enabled\": true,\n                                                    \"print\": false,\n                                                    \"meta\": {\n                                                        \"module\": \"list\",\n                                                        \"name\": \"Add\"\n                                                    },\n                                                    \"argCount\": 4,\n                                                    \"args\": [\n                                                        {\n                                                            \"name\": \"__none__\",\n                                                            \"linked\": false\n                                                        },\n                                                        {\n                                                            \"name\": \"list\",\n                                                            \"value\": \"all_ps\",\n                                                            \"invalidVar\": false,\n                                                            \"linked\": false,\n                                                            \"usedVars\": [\n                                                                \"all_ps\"\n                                                            ]\n                                                        },\n                                                        {\n                                                            \"name\": \"item\",\n                                                            \"value\": \"[new_ps, new_ps2]\",\n                                                            \"invalidVar\": false,\n                                                            \"linked\": false,\n                                                            \"usedVars\": [\n                                                                \"new_ps\",\n                                                                \"new_ps2\"\n                                                            ]\n                                                        },\n                                                        {\n                                                            \"name\": \"method\",\n                                                            \"value\": \"'to_end'\",\n                                                            \"usedVars\": [],\n                                                            \"invalidVar\": false,\n                                                            \"linked\": false\n                                                        }\n                                                    ],\n                                                    \"selected\": false,\n                                                    \"selectGeom\": false,\n                                                    \"parent\": \"~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~4\",\n                                                    \"hasError\": false\n                                                }\n                                            ],\n                                            \"variable\": \"i\",\n                                            \"hasError\": false,\n                                            \"selected\": false\n                                        },\n                                        {\n                                            \"type\": 8,\n                                            \"ID\": \"prod-y1onsrng18c\",\n                                            \"enabled\": true,\n                                            \"print\": false,\n                                            \"meta\": {\n                                                \"module\": \"make\",\n                                                \"name\": \"Polygon\"\n                                            },\n                                            \"argCount\": 3,\n                                            \"args\": [\n                                                {\n                                                    \"name\": \"var_name\",\n                                                    \"value\": \"side_pg\",\n                                                    \"linked\": false,\n                                                    \"invalidVar\": false\n                                                },\n                                                {\n                                                    \"name\": \"__model__\",\n                                                    \"linked\": false\n                                                },\n                                                {\n                                                    \"name\": \"entities\",\n                                                    \"value\": \"listFlat(all_ps, 1)\",\n                                                    \"usedVars\": [\n                                                        \"all_ps\"\n                                                    ],\n                                                    \"invalidVar\": false,\n                                                    \"linked\": false\n                                                }\n                                            ],\n                                            \"selected\": false,\n                                            \"variable\": \"side_pg\",\n                                            \"hasError\": false\n                                        },\n                                        {\n                                            \"type\": 8,\n                                            \"ID\": \"prod-9itc65grxpd\",\n                                            \"enabled\": true,\n                                            \"print\": false,\n                                            \"meta\": {\n                                                \"module\": \"make\",\n                                                \"name\": \"Extrude\"\n                                            },\n                                            \"argCount\": 6,\n                                            \"args\": [\n                                                {\n                                                    \"name\": \"var_name\",\n                                                    \"value\": \"stairs\",\n                                                    \"linked\": false,\n                                                    \"invalidVar\": false\n                                                },\n                                                {\n                                                    \"name\": \"__model__\",\n                                                    \"linked\": false\n                                                },\n                                                {\n                                                    \"name\": \"entities\",\n                                                    \"value\": \"side_pg\",\n                                                    \"linked\": false,\n                                                    \"usedVars\": [\n                                                        \"side_pg\"\n                                                    ],\n                                                    \"invalidVar\": false\n                                                },\n                                                {\n                                                    \"name\": \"distance\",\n                                                    \"value\": \"[-width, 0, 0]\",\n                                                    \"linked\": false,\n                                                    \"usedVars\": [\n                                                        \"width\"\n                                                    ],\n                                                    \"invalidVar\": false\n                                                },\n                                                {\n                                                    \"name\": \"divisions\",\n                                                    \"value\": \"1\",\n                                                    \"linked\": false,\n                                                    \"usedVars\": [],\n                                                    \"invalidVar\": false\n                                                },\n                                                {\n                                                    \"name\": \"method\",\n                                                    \"value\": \"'quads'\",\n                                                    \"linked\": false,\n                                                    \"usedVars\": [],\n                                                    \"invalidVar\": false\n                                                }\n                                            ],\n                                            \"selected\": false,\n                                            \"variable\": \"stairs\",\n                                            \"hasError\": false,\n                                            \"selectGeom\": false\n                                        },\n                                        {\n                                            \"type\": 8,\n                                            \"ID\": \"prod-2cyo7bnkdwi\",\n                                            \"enabled\": true,\n                                            \"print\": false,\n                                            \"meta\": {\n                                                \"module\": \"modify\",\n                                                \"name\": \"Reverse\"\n                                            },\n                                            \"argCount\": 3,\n                                            \"args\": [\n                                                {\n                                                    \"name\": \"__none__\",\n                                                    \"linked\": false\n                                                },\n                                                {\n                                                    \"name\": \"__model__\",\n                                                    \"linked\": false\n                                                },\n                                                {\n                                                    \"name\": \"entities\",\n                                                    \"linked\": false,\n                                                    \"value\": \"side_pg\",\n                                                    \"usedVars\": [\n                                                        \"side_pg\"\n                                                    ],\n                                                    \"invalidVar\": false\n                                                }\n                                            ],\n                                            \"selected\": false,\n                                            \"selectGeom\": false,\n                                            \"hasError\": false\n                                        }\n                                    ],\n                                    \"state\": {\n                                        \"procedure\": []\n                                    },\n                                    \"input\": \"~flowchart~nodes~0~output~edges~0~target\",\n                                    \"output\": {\n                                        \"name\": \"output\",\n                                        \"type\": 1,\n                                        \"edges\": [\n                                            {\n                                                \"source\": \"~flowchart~nodes~0~output~edges~0~target~parentNode~output\",\n                                                \"target\": {\n                                                    \"name\": \"input\",\n                                                    \"type\": 0,\n                                                    \"edges\": [\n                                                        \"~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~0\"\n                                                    ],\n                                                    \"meta\": {\n                                                        \"mode\": 0,\n                                                        \"opts\": {}\n                                                    },\n                                                    \"parentNode\": {\n                                                        \"name\": \"End\",\n                                                        \"id\": \"node_lewgfm95ng\",\n                                                        \"position\": {\n                                                            \"x\": 5340,\n                                                            \"y\": 5240\n                                                        },\n                                                        \"enabled\": true,\n                                                        \"type\": \"end\",\n                                                        \"procedure\": [\n                                                            {\n                                                                \"type\": 13,\n                                                                \"ID\": \"\",\n                                                                \"meta\": {\n                                                                    \"name\": \"\",\n                                                                    \"module\": \"\"\n                                                                },\n                                                                \"argCount\": 0,\n                                                                \"args\": [],\n                                                                \"print\": false,\n                                                                \"enabled\": true,\n                                                                \"selected\": false,\n                                                                \"selectGeom\": false,\n                                                                \"hasError\": false\n                                                            },\n                                                            {\n                                                                \"type\": 11,\n                                                                \"ID\": \"\",\n                                                                \"meta\": {\n                                                                    \"name\": \"\",\n                                                                    \"module\": \"\"\n                                                                },\n                                                                \"argCount\": 2,\n                                                                \"args\": [\n                                                                    {\n                                                                        \"name\": \"__model__\",\n                                                                        \"value\": \"\",\n                                                                        \"linked\": false\n                                                                    },\n                                                                    {\n                                                                        \"name\": \"value\",\n                                                                        \"value\": \"\",\n                                                                        \"linked\": false\n                                                                    }\n                                                                ],\n                                                                \"print\": false,\n                                                                \"enabled\": true,\n                                                                \"selected\": false,\n                                                                \"selectGeom\": false,\n                                                                \"hasError\": false\n                                                            }\n                                                        ],\n                                                        \"state\": {\n                                                            \"procedure\": []\n                                                        },\n                                                        \"input\": \"~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~0~target\",\n                                                        \"output\": {\n                                                            \"name\": \"output\",\n                                                            \"type\": 1,\n                                                            \"edges\": [],\n                                                            \"meta\": {\n                                                                \"mode\": 0\n                                                            },\n                                                            \"parentNode\": \"~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~0~target~parentNode\"\n                                                        },\n                                                        \"hasError\": false,\n                                                        \"hasExecuted\": true\n                                                    }\n                                                },\n                                                \"selected\": false\n                                            }\n                                        ],\n                                        \"meta\": {\n                                            \"mode\": 0\n                                        },\n                                        \"parentNode\": \"~flowchart~nodes~0~output~edges~0~target~parentNode\",\n                                        \"model\": null\n                                    },\n                                    \"hasError\": false,\n                                    \"hasExecuted\": true\n                                }\n                            },\n                            \"selected\": false\n                        }\n                    ],\n                    \"meta\": {\n                        \"mode\": 0\n                    },\n                    \"parentNode\": \"~flowchart~nodes~0\",\n                    \"model\": null\n                },\n                \"hasError\": false,\n                \"hasExecuted\": true\n            },\n            \"~flowchart~nodes~0~output~edges~0~target~parentNode\",\n            \"~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~0~target~parentNode\"\n        ],\n        \"edges\": [\n            \"~flowchart~nodes~0~output~edges~0\",\n            \"~flowchart~nodes~0~output~edges~0~target~parentNode~output~edges~0\"\n        ],\n        \"functions\": [],\n        \"ordered\": true,\n        \"last_updated\": \"2019-05-28T03:19:15.455Z\"\n    },\n    \"version\": 3,\n    \"settings\": \"{\\\"normals\\\":{\\\"show\\\":false,\\\"size\\\":5},\\\"axes\\\":{\\\"show\\\":true,\\\"size\\\":50},\\\"grid\\\":{\\\"show\\\":true,\\\"size\\\":500},\\\"positions\\\":{\\\"show\\\":true,\\\"size\\\":0.5},\\\"tjs_summary\\\":{\\\"show\\\":false},\\\"gi_summary\\\":{\\\"show\\\":false},\\\"wireframe\\\":{\\\"show\\\":false},\\\"camera\\\":{\\\"pos\\\":{\\\"x\\\":-80,\\\"y\\\":-80,\\\"z\\\":80},\\\"pos_x\\\":-80,\\\"pos_y\\\":-80,\\\"pos_z\\\":80},\\\"colors\\\":{\\\"viewer_bg\\\":\\\"#E6E6E6\\\",\\\"position\\\":\\\"#000000\\\",\\\"position_s\\\":\\\"#0033FF\\\",\\\"vertex_s\\\":\\\"#FFCC00\\\",\\\"face_f\\\":\\\"#FFFFFF\\\",\\\"face_f_s\\\":\\\"#4949BD\\\",\\\"face_b\\\":\\\"#DDDDDD\\\",\\\"face_b_s\\\":\\\"#00006D\\\"},\\\"ambient_light\\\":{\\\"show\\\":true,\\\"color\\\":\\\"#FFFFFF\\\",\\\"intensity\\\":0.5},\\\"hemisphere_light\\\":{\\\"show\\\":true,\\\"helper\\\":false,\\\"skyColor\\\":\\\"#FFFFFF\\\",\\\"groundColor\\\":\\\"#FFFFFF\\\",\\\"intensity\\\":0.5},\\\"directional_light\\\":{\\\"show\\\":false,\\\"helper\\\":false,\\\"color\\\":\\\"#FFFFFF\\\",\\\"intensity\\\":1,\\\"shadow\\\":true,\\\"shadowSize\\\":4,\\\"azimuth\\\":90,\\\"altitude\\\":45,\\\"distance\\\":10000},\\\"ground\\\":{\\\"show\\\":false,\\\"width\\\":1000,\\\"length\\\":1000,\\\"height\\\":-0.5,\\\"color\\\":\\\"#FFFFFF\\\",\\\"shininess\\\":0},\\\"select\\\":{\\\"selector\\\":{\\\"id\\\":5,\\\"name\\\":\\\"Faces\\\"},\\\"tab\\\":\\\"0\\\"},\\\"version\\\":\\\"0.4.35\\\"}\"\n}",
+                "args": [
+                    "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~3~args~1",
+                    "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~3~args~2",
+                    "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~3~args~3",
+                    "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~3~args~4",
+                    "~flowchart~nodes~0~output~edges~0~target~parentNode~procedure~3~args~5"
+                ],
+                "argCount": 5,
+                "hasReturn": false
+            }
+        ],
+        "ordered": true,
+        "subFunctions": [],
+        "last_updated": "2019-05-28T03:45:31.128Z"
+    },
+    "version": 1,
+    "settings": "{\"normals\":{\"show\":false,\"size\":5},\"axes\":{\"show\":true,\"size\":50},\"grid\":{\"show\":true,\"size\":500},\"positions\":{\"show\":true,\"size\":0.5},\"tjs_summary\":{\"show\":false},\"gi_summary\":{\"show\":false},\"wireframe\":{\"show\":false},\"camera\":{\"pos\":{\"x\":-80,\"y\":-80,\"z\":80},\"pos_x\":-80,\"pos_y\":-80,\"pos_z\":80},\"colors\":{\"viewer_bg\":\"#E6E6E6\",\"position\":\"#000000\",\"position_s\":\"#0033FF\",\"vertex_s\":\"#FFCC00\",\"face_f\":\"#FFFFFF\",\"face_f_s\":\"#4949BD\",\"face_b\":\"#DDDDDD\",\"face_b_s\":\"#00006D\"},\"ambient_light\":{\"show\":true,\"color\":\"#FFFFFF\",\"intensity\":0.5},\"hemisphere_light\":{\"show\":true,\"helper\":false,\"skyColor\":\"#FFFFFF\",\"groundColor\":\"#FFFFFF\",\"intensity\":0.5},\"directional_light\":{\"show\":false,\"helper\":false,\"color\":\"#FFFFFF\",\"intensity\":1,\"shadow\":true,\"shadowSize\":4,\"azimuth\":90,\"altitude\":45,\"distance\":10000},\"ground\":{\"show\":false,\"width\":1000,\"length\":1000,\"height\":-0.5,\"color\":\"#FFFFFF\",\"shininess\":0},\"select\":{\"selector\":{\"id\":5,\"name\":\"Faces\"},\"tab\":\"0\"},\"version\":\"0.4.35\"}"
+}
